@@ -1,0 +1,33 @@
+﻿@model List<GestionAcademica_ViewModels.Models.AlumnoCursoProfesorViewModel>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+    <div class="container mt-4">
+        <h2>Listado de Alumnos, Cursos y Profesores</h2>
+        <table class="table table-striped table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>Alumno</th>
+                    <th>Curso</th>
+                    <th>Profesor</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.AlumnoNombre</td>
+                        <td>@item.CursoNombre</td>
+                        <td>@item.ProfesorNombre</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="container mt-4">
+        Total de alumnos: @Model.Count()
+    </div>
