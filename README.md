@@ -28,3 +28,4 @@ El objetivo principal es resolver el problema de presentar datos provenientes de
 | :--- | :--- | :--- |
 | **`Models/AlumnoCursoProfesorViewModel.cs`** | **ViewModel** | La estructura de datos final que la vista consume. |
 | **`Controllers/AlumnosController.cs`** | Controlador | Contiene la lógica LINQ para unir los 3 modelos y enviar el ViewModel. |
+| **`Views/Alumnos/Index.cshtml`** | Vista | Renderiza la lista del ViewModel en una tabla con estilos Bootstrap. |
